@@ -1,0 +1,340 @@
+body {
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #6b6b6b; /* Default text color */
+}
+
+#header {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#header a.logo {
+  display: block;
+  text-align: center; /* Center the logo */
+  margin: 20px auto; /* Add spacing */
+}
+
+#header a.logo img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+#header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#header ul li {
+  margin: 0 15px;
+}
+
+#header ul li a {
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+#header ul li a:hover {
+  color: #4d4a4a;
+  background-color: #f8f5f0;
+  border-radius: 5px;
+}
+
+#body {
+  margin: 0 auto;
+  width: 90%; /* Adjust for responsiveness */
+  max-width: 1200px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#body #featured {
+  position: relative; /* To position the text over the image */
+  text-align: center;
+}
+
+#body #featured img {
+  width: 100%;
+  max-height: 400px; /* Restrict the height of the feature image */
+  object-fit: cover; /* Ensure the image scales nicely */
+}
+
+#body #featured div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; /* Text over the image will be white */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#body #featured div h2 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #413f3e; /* Dark grey color for text */
+  text-shadow: -1px -1px 0 #ffffff, /* Top left outline */ 1px -1px 0 #ffffff,
+    /* Top right outline */ -1px 1px 0 #ffffff,
+    /* Bottom left outline */ 1px 1px 0 #ffffff; /* Bottom right outline */
+}
+
+#body #featured div span {
+  font-size: 18px;
+  margin: 10px 0;
+  display: block;
+  color: #ffffff; /* Text color */
+}
+
+#body #featured div a.more {
+  background: #413f3e;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+#body #featured div a.mor e:hover {
+  background: #413f3e;
+  color: #ffffff;
+}
+
+#body ul {
+  display: flex;
+  justify-content: center; /* Center the entire row */
+  align-items: center; /* Align vertically */
+  gap: 40px; /* Adjust spacing between items */
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#body ul li {
+  text-align: center;
+  flex: 1; /* Make each item take up equal space */
+  max-width: 200px; /* Limit the maximum width for consistency */
+}
+
+#body ul li img {
+  width: 100px; /* Adjust image size for better balance */
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Center the image */
+}
+
+#body ul li span {
+  display: block;
+  margin-top: 10px;
+  color: #6b6b6b;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  text-align: center; /* Ensure text is centered */
+}
+
+#footer {
+  background: #d3d3d3;
+  padding: 20px 0;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#footer ul li a {
+  color: #6b6b6b;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#footer ul li a:hover {
+  color: #ffffff;
+  background: #ff6f61;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* ABOUT PAGE SPECIFIC STYLES */
+.about-header {
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about-logo {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.about-logo img {
+  width: 120px; /* Adjust the logo size */
+  max-width: 100%; /* Ensure it scales properly on smaller devices */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about-navigation {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.about-navigation li {
+  margin: 0 15px;
+}
+
+.about-navigation li a {
+  color: #6b6b6b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.about-navigation li a:hover {
+  color: #ff6f61;
+  background-color: #f8f5f0;
+  border-radius: 5px;
+}
+
+.about-body {
+  margin: 0 auto;
+  width: 90%; /* Adjust for responsiveness */
+  max-width: 1200px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.about-body h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 28px;
+  color: #413f3e;
+  margin-bottom: 20px;
+}
+
+.about-body img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.about-article h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 22px;
+  color: #413f3e;
+  margin-bottom: 10px;
+}
+
+.about-article p {
+  font-size: 16px;
+  color: #6b6b6b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-footer {
+  background: #d3d3d3;
+  padding: 20px 0;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.about-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.about-footer ul li a {
+  color: #6b6b6b;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.about-footer ul li a:hover {
+  color: #ffffff;
+  background: #ff6f61;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Gallery Page Specific Styles */
+#body {
+  margin: 0 auto;
+  width: 90%; /* Adjust for responsiveness */
+  max-width: 1200px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#body h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 28px;
+  color: #413f3e;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.gallery li {
+  position: relative;
+}
+
+.gallery li img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.gallery li img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
